@@ -1,0 +1,35 @@
+--Repositorio git JSBM4573R/Proyect_Lingstar.
+https://github.com/JSBM4573R/Proyect_Lingstar.git
+
+--Comandos git.
+https://www.youtube.com/watch?v=c4kq10VBr0Y
+
+--Repositorio git Singin and Singup.
+https://github.com/FaztWeb/php-login-simple
+https://www.youtube.com/watch?v=37IN_PW5U8E
+--login tipo de usuario
+https://www.youtube.com/watch?v=kYA21mei6As
+
+--Toggle menu.
+https://www.youtube.com/watch?v=xQstBIPeOdU
+https://www.youtube.com/watch?v=v1-w4qcRWCU
+
+--Galeria html css
+https://www.youtube.com/watch?v=8MMTHeGpUgI
+
+--em y rem
+https://www.youtube.com/watch?v=nz6DIeBdZtY
+
+--creacion de base de datos para generar test de validacion de ingreso y registro.
+
+query mysql:
+
+CREATE DATABASE  php_login_database;
+
+CREATE TABLE users (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+nombres VARCHAR (50) NOT NULL,
+apellidos VARCHAR (50) NOT NULL,
+contacto VARCHAR(50) NOT NULL,
+email VARCHAR (50) NOT NULL, 
+password VARCHAR (50) NOT NULL);
