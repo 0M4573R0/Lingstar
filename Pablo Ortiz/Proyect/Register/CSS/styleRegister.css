@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"Anton", sans-serif;
+    background-image: url(../IMG/Background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+	height:100vh;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 110px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.bar-btn{
+    font-size: 25px;
+    color:rgb(0, 0, 0);
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    transition: all .4s;
+    display: run-in; 
+}
+
+.nav-menu li{
+    display: none;
+    line-height: 30px;
+    margin: 50px;
+    transition: all .5s;
+}
+
+.nav-menu li a{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover {
+    color: rgb(243, 241, 241);
+    transition: .3s;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background-color: seagreen;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .nav-menu{
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li {
+    display: block;
+}
+
+.banner-text{
+    padding: 0 30px;
+    margin-top: 150px;
+    text-align: center;
+    color: #000;
+}
+
+.banner-text h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.banner-text span{
+    color:seagreen
+}
+
+.banner-text h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/*Cliente*/
+.button1{
+    margin-right: 30px;
+    padding: 10px 30px;
+    background-color: seagreen;
+    color: snow;
+    border-radius: 5px;
+}
+
+/*Cliente*/
+.button1:hover {
+    background-color: #fff;
+    color: seagreen;
+    transition: .5s;
+}
+
+/*Empresa*/
+.button2{
+    margin-right: 0px;
+    padding: 10px 30px;
+    background-color: seagreen;
+    color: snow;
+    border-radius: 5px;
+}
+
+/*Empresa*/
+.button2:hover {
+    background-color: #fff;
+    color: seagreen;
+    transition: .5s;
+}
+
+/*Formulario*/
+form {
+	padding: 30px 60px;
+	background-color: #f1f1f1;
+	margin: calc(25% + 50px);
+	margin-top: 50px;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 20px 20px 20px #1e1e1e, 
+				2px 2px 3px #282828;
+	z-index: 1;
+}
+
+.titulo h1{
+	color: seagreen;
+	text-align: center;
+	padding: 18px;
+}
+
+.formulario .datos{
+	text-align: center;
+	background: #dfe2e0;
+	width: calc(100% - 25px);
+	padding: 8px;
+	margin: auto;
+	margin-top: 14px;
+	font-size: 14px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	box-shadow: inset 5px 5px 5px #dbdbdb, inset -5 -5 5px #b3adad;
+}
+
+p{
+	color: #000;
+	margin-top: 16px;
+}
+
+.button_validate{
+	font-family:"Anton", sans-serif;
+	border: none;
+	position: relative;
+	margin-top: 30px;
+    padding: 10px 30px;
+    background-color: seagreen;
+    color: snow;
+    border-radius: 5px;
+}
+
+.button_validate:hover{
+    background-color: #fff;
+    color: seagreen;
+    transition: .5s;
+}
+
+/*funcion responsive de JS*/
+@media screen and (min-width: 768px){
+
+
+    .logo{
+        margin-left: 50px;
+    }
+
+    nav{
+        height: 100px;
+    }
+
+    .bar-btn{
+        display: none;
+    }
+        .nav-menu{
+            position: relative;
+            height: 100px;
+            top: 0%;
+            background: none;
+            transition: none;
+            text-align: right;
+            margin-right: 50px;
+        }
+
+        .nav-menu li{
+            display: inline-block;
+            line-height: 100px;
+            margin: 0 20px;
+            transition: none;
+        }
+
+        .nav-menu li a {
+            font-size: 15px;
+        }
+
+        .banner-text h1 {
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+
+        .banner-text h2 {
+            font-size: 35px;
+        }
+}
+
+
