@@ -1,6 +1,6 @@
 <?php
 
-  require '../Validaciones/database.php';
+  require '../Validate/database.php';
 
   $message = '';
 

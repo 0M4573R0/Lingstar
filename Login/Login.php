@@ -5,7 +5,7 @@
   if (isset($_SESSION['user_id'])) { 
     header("Location: ../Home/Cliente.php");
   }
-  require '../Validaciones/database.php';
+  require '../Validate/database.php';
 
   if (!empty($_POST['email']) && !empty($_POST['password'])) {
     $records = $conn->prepare('SELECT id, email, password FROM users WHERE email = :email');
@@ -118,6 +118,7 @@
                 .classList.toggle("active")
         }
     </script>
+    
 </body>
 
 </html>

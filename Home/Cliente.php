@@ -1,7 +1,7 @@
 <?php
   session_start();
 
-  require '../Validaciones/database.php';
+  require '../Validate/database.php';
 
   if (isset($_SESSION['user_id'])) {
     $records = $conn->prepare('SELECT id, nombres, password FROM users WHERE id = :id');

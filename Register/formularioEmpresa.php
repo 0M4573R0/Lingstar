@@ -1,6 +1,6 @@
 <?php
 
-  require '../Validaciones/database.php';
+  require '../Validate/database.php';
 
   $message = '';
 
@@ -46,9 +46,7 @@
     </head>
     <body>
             
-        <?php
-        require '../Partials/encabezado.php';
-        ?>
+        <?php require '../Partials/encabezado.php'; ?>
             
         <form action = "formularioEmpresa.php" method = "POST">
             <div class="titulo">

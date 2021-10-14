@@ -24,7 +24,7 @@
             <label for="check" class="bar-btn">
                 <i class="fas fa-bars"></i>
             </label>
-            <ul class="nav-menu">
+            <ul class="nav-menu wrapper">
                 <li><a href="../Home/Home.php">Home</a></li>
                 <li><a href="../Login/Login.php">Reserva</a></li>
             </ul>
